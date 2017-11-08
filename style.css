@@ -21,7 +21,7 @@ p {
 }
 
 .container {
-    max-width: 1060px;
+    max-width: 1160px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px
@@ -36,10 +36,61 @@ p {
 }
 
 .site-header {
+    display: flex;
     border-bottom: 2px solid #999;
+}
+
+.site-header > h5{
+    padding: 15px;
+}
+.site-nav {
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.site-nav ul {
+    display: inline-flex;
+    padding: 0;
+}
+
+.site-nav ul li{
+    list-style: none;
+}
+
+.site-header nav ul li a:link {
+    display: block;
+    padding: 10px 10px;
 }
 
 .site-footer {
     margin-top: 30px;
     border-bottom: 2px solid #999;
+}
+
+.site-footer {
+    display: flex;
+}
+
+.site-nav-footer {
+    justify-content: flex-start;
+    flex: 1;
+    display: flex;
+}
+
+.site-nav-footer ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+}
+
+.site-footer nav ul li a:link {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+article.page h2 {
+    font-size: 200%;
 }
